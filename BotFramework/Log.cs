@@ -10,7 +10,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Discord;
 
-namespace King_of_the_Garbage_Hill.BotFramework
+namespace SharkFramework.BotFramework
 {
     public sealed class LoginFromConsole : IServiceSingleton
     {
