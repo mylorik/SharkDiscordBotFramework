@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Discord;
 using Discord.Commands;
-using King_of_the_Garbage_Hill.BotFramework.Extensions;
-using King_of_the_Garbage_Hill.LocalPersistentData.UsersAccounts;
+using SharkFramework.BotFramework.Extensions;
+using SharkFramework.LocalPersistentData.UsersAccounts;
 
-namespace King_of_the_Garbage_Hill.GeneralCommands
+namespace SharkFramework.GeneralCommands
 {
     public class HelpModule :  ModuleBaseCustom
     {
