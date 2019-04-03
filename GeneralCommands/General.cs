@@ -7,13 +7,8 @@ using System.Threading.Tasks;
 using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
-using King_of_the_Garbage_Hill.BotFramework.Extensions;
-using King_of_the_Garbage_Hill.Game.Classes;
-using King_of_the_Garbage_Hill.Game.DiscordMessages;
-using King_of_the_Garbage_Hill.Game.GameLogic;
-using King_of_the_Garbage_Hill.Game.MemoryStorage;
-using King_of_the_Garbage_Hill.Helpers;
-using King_of_the_Garbage_Hill.LocalPersistentData.UsersAccounts;
+using SharkFramework.BotFramework.Extensions;
+using SharkFramework.LocalPersistentData.UsersAccounts;
 using Newtonsoft.Json;
 
 namespace SharkFramework.GeneralCommands
