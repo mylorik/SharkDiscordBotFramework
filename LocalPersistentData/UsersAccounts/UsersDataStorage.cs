@@ -2,15 +2,15 @@
 using System.Collections.Concurrent;
 using System.IO;
 using System.Threading.Tasks;
-using King_of_the_Garbage_Hill.BotFramework;
-using King_of_the_Garbage_Hill.Game.Classes;
+using SharkFramework.BotFramework;
+
 using Newtonsoft.Json;
 
-namespace King_of_the_Garbage_Hill.LocalPersistentData.UsersAccounts
+namespace SharkFramework.LocalPersistentData.UsersAccounts
 {
        public sealed class UserAccountsDataStorage : IServiceSingleton
     {
-        //Save all DiscordAccountClass
+
 
         private readonly LoginFromConsole _log;
 
