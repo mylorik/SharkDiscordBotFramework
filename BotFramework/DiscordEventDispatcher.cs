@@ -1,10 +1,11 @@
-﻿using System.Diagnostics;
+// Dispatch all events wehre you need them
+using System.Diagnostics;
 using System.Threading.Tasks;
 using Discord;
 using Discord.WebSocket;
-using King_of_the_Garbage_Hill.Game.ReactionHandling;
 
-namespace King_of_the_Garbage_Hill.BotFramework
+
+namespace SharkFramework.BotFramework
 {
     public sealed class DiscordEventDispatcher : IServiceSingleton
     {
