@@ -2,10 +2,10 @@
 using System.Threading.Tasks;
 using Discord;
 using Discord.Commands;
-using King_of_the_Garbage_Hill.BotFramework.Extensions;
-using King_of_the_Garbage_Hill.Helpers;
+using SharkFramework.BotFramework.Extensions;
+using SharkFramework.Helpers;
 
-namespace King_of_the_Garbage_Hill.GeneralCommands
+namespace SharkFramework.GeneralCommands
 {
     public class DiceRollCommands : ModuleBaseCustom
     {
@@ -77,7 +77,7 @@ namespace King_of_the_Garbage_Hill.GeneralCommands
         }
 
         [Command("roll")]
-        [Alias("Роллл", "Ролл")]
+        [Alias("r")]
         [Summary("Rolling a dice multiple times")]
         public async Task Roll(int number, int times)
         {
@@ -124,7 +124,7 @@ namespace King_of_the_Garbage_Hill.GeneralCommands
         }
 
         [Command("roll")]
-        [Alias("Роллл", "Ролл")]
+        [Alias("r")]
         [Summary("Rolling a dice 1 time")]
         public async Task Roll(int number)
         {
