@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Discord.WebSocket;
 using King_of_the_Garbage_Hill.Game.Classes;
 
-namespace King_of_the_Garbage_Hill
+namespace SharkFramework
 {
     public sealed class Global : IServiceSingleton
     {
@@ -30,31 +30,11 @@ namespace King_of_the_Garbage_Hill
 
         public readonly DiscordShardedClient Client;
         public readonly DateTime TimeBotStarted;
-        private ulong GamePlayingAndId { get; set; }
         public uint TotalCommandsIssued;
         public uint TotalCommandsDeleted;
         public uint TotalCommandsChanged;
         public ConcurrentDictionary<ulong, Stopwatch> TimeSpendOnLastMessage;
+        //add more global variable here
 
-
-        public List<GameClass> GamesList;
-
-
-        public GamePlayerBridgeClass GetGameAccount(ulong userId, ulong gameId)
-        {
-            return GamesList.Find(x => x.GameId == gameId).PlayersList.Find(x => x.DiscordAccount.DiscordId == userId);
-        }
-
-
-        public ulong GetLastGamePlayingAndId()
-        {
-            return GamePlayingAndId;
-        }
-
-        public ulong GetNewtGamePlayingAndId()
-        {
-            GamePlayingAndId++;
-            return GamePlayingAndId;
-        }
     }
 }
