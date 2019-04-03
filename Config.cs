@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using King_of_the_Garbage_Hill.BotFramework;
 using Newtonsoft.Json;
 
-namespace King_of_the_Garbage_Hill
+namespace SharkFramework
 {
     public sealed class Config : IServiceSingleton
     {
@@ -13,7 +13,7 @@ namespace King_of_the_Garbage_Hill
         {
             try
             {
-                JsonConvert.PopulateObject(File.ReadAllText(@"DataBase/OctoDataBase/config.json"), this);
+                JsonConvert.PopulateObject(File.ReadAllText(@"DataBaseFolder/config.json"), this);
             }
             catch (Exception ex)
             {
