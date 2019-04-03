@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 using System.Timers;
 using Discord;
 using Discord.WebSocket;
-using King_of_the_Garbage_Hill.Game.Classes;
 
-namespace King_of_the_Garbage_Hill.LocalPersistentData.UsersAccounts
+
+namespace SharkFramework.LocalPersistentData.UsersAccounts
 {
     public sealed class UserAccounts : IServiceSingleton
     {
@@ -27,6 +27,7 @@ namespace King_of_the_Garbage_Hill.LocalPersistentData.UsersAccounts
 
         public void SaveAllAccountsTimer()
         {
+        //auto saving, set it to the nummber you need
             LoopingTimer = new Timer
             {
                 AutoReset = true,
@@ -94,26 +95,6 @@ namespace King_of_the_Garbage_Hill.LocalPersistentData.UsersAccounts
             return account;
         }
 
-
-        //obsolete 
-        public void SaveAccounts(ulong userId)
-        {
-        //    var accounts = GetOrAddUserAccount(userId);
-        //    _usersDataStorage.SaveAccountSettings(accounts, userId);
-        }
-        //obsolete 
-        public void SaveAccounts(IUser user)
-        {
-        //    var accounts = GetOrAddUserAccount(user.Id);
-        //    _usersDataStorage.SaveAccountSettings(accounts, user.Id);
-        }
-
-        //obsolete 
-        public void SaveAccounts(DiscordAccountClass user)
-        {
-        //    var accounts = GetOrAddUserAccount(user.DiscordId);
-        //    _usersDataStorage.SaveAccountSettings(accounts, user.DiscordId);
-        }
 
         private void SaveAllAccounts(object sender, ElapsedEventArgs e)
         {
