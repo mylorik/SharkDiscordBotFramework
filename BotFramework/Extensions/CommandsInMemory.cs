@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Discord;
 
-namespace King_of_the_Garbage_Hill.BotFramework.Extensions
+namespace SharkFramework.BotFramework.Extensions
 {
    public class CommandsInMemory : IServiceSingleton
     {
